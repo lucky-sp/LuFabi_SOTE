@@ -12,8 +12,7 @@ public class Main {
         allEmployees[2] = new EmployeeTypC("Sieglinde", 2000);
 
         int monthSumSalary = 0;
-
-        System.out.println("commiten wie die Weltmeister!")
+    //abc
 
         // Set monthly information
         for (int i = 0; i < allEmployees.length; i++ ){
