@@ -22,7 +22,5 @@ public class Main {
         // prints out sum of salary for all employees for the month
         //test
         System.out.println("diesen Monat werden insgesamt " + monthSumSalary + "€ Gehalt gezahlt");
-        System.out.println("abc");
-
     }
 }
