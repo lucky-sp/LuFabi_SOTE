@@ -13,6 +13,8 @@ public class Main {
 
         int monthSumSalary = 0;
 
+        System.out.println("commiten wie die Weltmeister!")
+
         // Set monthly information
         for (int i = 0; i < allEmployees.length; i++ ){
             System.out.println(allEmployees[i].getInputInformation());  // returns inforamation about what to enter in the next line 
