@@ -12,7 +12,6 @@ public class Main {
         allEmployees[2] = new EmployeeTypC("Sieglinde", 2000);
 
         int monthSumSalary = 0;
-    //abc
 
         // Set monthly information
         for (int i = 0; i < allEmployees.length; i++ ){
@@ -21,7 +20,9 @@ public class Main {
         }
         
         // prints out sum of salary for all employees for the month
-        System.out.println("diesen Monat werden insgesamt " + Integer.toString(monthSumSalary) + "€ Gehalt gezahlt");
+        //test
+        System.out.println("diesen Monat werden insgesamt " + monthSumSalary + "€ Gehalt gezahlt");
+        System.out.println("abc");
 
     }
 }
