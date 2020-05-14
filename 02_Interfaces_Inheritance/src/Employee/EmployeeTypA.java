@@ -2,9 +2,13 @@ package Employee;
 
 // Employee has a fix salary per month
 
+<<<<<<< HEAD:02_Interfaces_Inheritance/src/Employee/EmployeeTypA.java
 import Employee.employee;
 
 public class EmployeeTypA implements employee {
+=======
+public class EmployeeTypA implements Iemployee {
+>>>>>>> 11dc4efca5b6d54db973a66d4bfedfbf9342089f:02_Interfaces_Inheritance/src/EmployeeTypA.java
 
     private int salaryPerM;
     private String name;
