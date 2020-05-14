@@ -2,7 +2,7 @@
 
 // Employee has a fix salary per month
 
-public class EmployeeTypA implements employee {
+public class EmployeeTypA implements Iemployee {
 
     private int salaryPerM;
     private String name;

@@ -6,7 +6,7 @@ public class Main {
         Scanner scannObj = new Scanner(System.in);
         
         // initialize all employees am structure them in array
-        employee[] allEmployees = new employee[3];
+        Iemployee[] allEmployees = new Iemployee[3];
         allEmployees[0] = new EmployeeTypA("Hubert", 2500);
         allEmployees[1] = new EmployeeTypB("Kim", 12);
         allEmployees[2] = new EmployeeTypC("Sieglinde", 2000);

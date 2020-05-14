@@ -2,7 +2,7 @@
 
 // Employee has a fix salary per month and an additional bonus payment
 
-public class EmployeeTypC implements employee {
+public class EmployeeTypC implements Iemployee {
 
     private int salaryPerM;
     private String name;

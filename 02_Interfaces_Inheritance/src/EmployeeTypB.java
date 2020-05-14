@@ -3,7 +3,7 @@
 
 // Employee has a fix salary per hour, salary per month depends on working hours
 
-public class EmployeeTypB implements employee {
+public class EmployeeTypB implements Iemployee {
 
     private int salaryPerH;
     private String name;
