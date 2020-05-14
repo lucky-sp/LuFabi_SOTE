@@ -1,20 +1,20 @@
-public class CrewMember extends AirlinePersons {
+public class CrewMember extends Crew {
 
-    public void activity(String exec) {
-        if (exec.equals("2")) {
-            if (this.type.equals("Crew") | this.type.equals("Pilot")) {
-                System.out.println("Here is the passenger list ...");
-            } else {
-                System.out.println("You are not authorized to retrieve the passenger list");
-            }
-        }
+    public static String getCrewMember() {
+        return "CrewMember";
     }
+    public static String getNoCrewMember(){
+        return "noCrewMember";
+    }
+
 
     public String position(String position) {
-        if (position.equals("Crew")) {
+        if (position.equals(getCrewMember())) {
             System.out.println("You are registered as a Crew Member");
-            return "Crew";
+            return getCrewMember();
         }
-        return "noCrew";
+        return getNoCrewMember();
     }
+
+
 }
