@@ -1,3 +1,5 @@
+package AirlineSolution1;
+
 public abstract class AirlinePersons {
 
     public String category;

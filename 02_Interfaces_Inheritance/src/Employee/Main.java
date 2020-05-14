@@ -1,4 +1,11 @@
-import java.util.Scanner;  
+package Employee;
+
+import Employee.EmployeeTypA;
+import Employee.EmployeeTypB;
+import Employee.EmployeeTypC;
+import Employee.employee;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){

@@ -1,7 +1,9 @@
-
+package Employee;
 
 
 // Employee has a fix salary per hour, salary per month depends on working hours
+
+import Employee.employee;
 
 public class EmployeeTypB implements employee {
 

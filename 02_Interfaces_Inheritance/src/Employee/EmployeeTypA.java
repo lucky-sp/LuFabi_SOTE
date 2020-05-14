@@ -1,6 +1,8 @@
-
+package Employee;
 
 // Employee has a fix salary per month
+
+import Employee.employee;
 
 public class EmployeeTypA implements employee {
 

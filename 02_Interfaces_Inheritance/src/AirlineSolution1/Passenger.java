@@ -1,7 +1,11 @@
+package AirlineSolution1;
+
+import AirlineSolution1.AirlinePersons;
+
 public class Passenger extends AirlinePersons {
 
     public static String getPassenger() {
-        return "Passenger";
+        return "AirlineSolution1.Passenger";
     }
     public static String getNoPassenger(){
         return "noPassenger";
@@ -9,7 +13,7 @@ public class Passenger extends AirlinePersons {
 
     public String position(String position) {
         if (position.equals(getPassenger())) {
-            System.out.println("You are registered as a Passenger");
+            System.out.println("You are registered as a AirlineSolution1.Passenger");
             return getPassenger();
         }
         else {

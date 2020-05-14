@@ -1,6 +1,8 @@
-
+package Employee;
 
 // Employee has a fix salary per month and an additional bonus payment
+
+import Employee.employee;
 
 public class EmployeeTypC implements employee {
 
