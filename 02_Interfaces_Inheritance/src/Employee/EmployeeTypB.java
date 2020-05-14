@@ -3,13 +3,7 @@ package Employee;
 
 // Employee has a fix salary per hour, salary per month depends on working hours
 
-<<<<<<< HEAD:02_Interfaces_Inheritance/src/Employee/EmployeeTypB.java
-import Employee.employee;
-
-public class EmployeeTypB implements employee {
-=======
 public class EmployeeTypB implements Iemployee {
->>>>>>> 11dc4efca5b6d54db973a66d4bfedfbf9342089f:02_Interfaces_Inheritance/src/EmployeeTypB.java
 
     private int salaryPerH;
     private String name;

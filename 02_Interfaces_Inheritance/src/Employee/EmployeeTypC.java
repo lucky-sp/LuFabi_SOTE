@@ -2,13 +2,9 @@ package Employee;
 
 // Employee has a fix salary per month and an additional bonus payment
 
-<<<<<<< HEAD:02_Interfaces_Inheritance/src/Employee/EmployeeTypC.java
-import Employee.employee;
 
-public class EmployeeTypC implements employee {
-=======
+
 public class EmployeeTypC implements Iemployee {
->>>>>>> 11dc4efca5b6d54db973a66d4bfedfbf9342089f:02_Interfaces_Inheritance/src/EmployeeTypC.java
 
     private int salaryPerM;
     private String name;

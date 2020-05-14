@@ -1,9 +1,5 @@
 package Employee;
-
-import Employee.EmployeeTypA;
-import Employee.EmployeeTypB;
-import Employee.EmployeeTypC;
-import Employee.employee;
+import AirlineSolution1.*;
 
 import java.util.Scanner;
 
