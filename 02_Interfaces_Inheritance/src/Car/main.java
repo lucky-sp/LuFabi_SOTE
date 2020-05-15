@@ -1,3 +1,5 @@
+package Car;
+
 public class main {
     public static void main (final String[] args) {
         final Car Auto = new Car(65, 180000, "VW", "Polo");

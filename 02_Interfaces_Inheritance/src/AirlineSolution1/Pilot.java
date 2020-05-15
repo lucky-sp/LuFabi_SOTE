@@ -5,7 +5,7 @@ import AirlineSolution1.Crew;
 public class Pilot extends Crew {
 
     public static String getPilot() {
-        return "AirlineSolution1.Pilot";
+        return "Pilot";
     }
     public static String getNoPilot(){
         return "noPilot";
@@ -23,7 +23,7 @@ public class Pilot extends Crew {
 
     public String position(String position) {
         if (position.equals(getPilot())) {
-            System.out.println("You are registered as a AirlineSolution1.Pilot");
+            System.out.println("You are registered as a Pilot");
             return getPilot();
         }
         return getNoPilot();

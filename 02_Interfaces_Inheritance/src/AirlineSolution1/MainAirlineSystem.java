@@ -21,9 +21,9 @@ public class MainAirlineSystem {
 
         System.out.println("Enter your position in the airline system.");
         System.out.println("You can choose between:");
-        System.out.println("AirlineSolution1.Pilot");
-        System.out.println("AirlineSolution1.CrewMember");
-        System.out.println("AirlineSolution1.Passenger");
+        System.out.println("Pilot");
+        System.out.println("CrewMember");
+        System.out.println("Passenger");
         System.out.print("Enter:");
         String position = scannObj.nextLine();
 
@@ -36,7 +36,7 @@ public class MainAirlineSystem {
 
         System.out.println("Please enter what you want to do:");
         System.out.println("1/ get flight infos");
-        System.out.println("2/ retrieve passenger list (if you are AirlineSolution1.Crew)");
+        System.out.println("2/ retrieve passenger list (if you are Crew)");
         System.out.println("3/ cancel flight (if you are a pilot");
         boolean loop = true;
         while (loop) {

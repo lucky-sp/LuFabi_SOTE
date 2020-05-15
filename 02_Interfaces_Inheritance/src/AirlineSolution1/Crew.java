@@ -3,7 +3,7 @@ package AirlineSolution1;
 public abstract class Crew extends AirlinePersons {
 
     public static String getCrew() {
-        return "AirlineSolution1.Crew";
+        return "Crew";
     }
     public static String getNoCrew(){
         return "noCrew";
