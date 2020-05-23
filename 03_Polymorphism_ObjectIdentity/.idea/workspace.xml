@@ -26,15 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="545c0d10-93d2-4645-a704-ede1aab1bde1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_Polymorphism_ObjectIdentity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
-    </list>
+    <list default="true" id="545c0d10-93d2-4645-a704-ede1aab1bde1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590235432744</updated>
-      <workItem from="1590235437250" duration="1128000" />
+      <workItem from="1590235437250" duration="1486000" />
     </task>
     <servers />
   </component>
