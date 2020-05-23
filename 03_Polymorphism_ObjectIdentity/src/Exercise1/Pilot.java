@@ -16,12 +16,14 @@ public class Pilot extends CrewMember {
                 pilot = (Pilot) list[i];
                 if (!inList) {
                     inList = true;
-                   System.out.println("Dieser Pilot ist auf dem Flug als Pilot in der Passagierliste vermerkt: " +
+                    System.out.println("Dieser Pilot ist auf dem Flug als Pilot in der Passagierliste vermerkt: " +
                             pilot.name + " " + pilot.position.getName());
+                    System.out.println("Listenplatz "+ i);
                     for (int j = ++i; j < list.length; j++) {
                         if (pilot.position.equals(list[j].position)) {
-                           System.out.println("Dieser Pilot ist fälschlicherweise zusätzlich in der Passagierliste: " +
+                            System.out.println("Dieser Pilot ist fälschlicherweise zusätzlich in der Passagierliste: " +
                                     list[j].name + " " + list[j].position.getName());
+                            System.out.println("Listenplatz "+ j );
                         }
                     }
 
