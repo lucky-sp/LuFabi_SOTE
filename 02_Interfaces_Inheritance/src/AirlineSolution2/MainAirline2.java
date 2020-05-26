@@ -1,9 +1,5 @@
 package AirlineSolution2;
 
-import AirlineSolution2.CancelFlight;
-import AirlineSolution2.GetFlightInfos;
-import AirlineSolution2.GetPassengerList;
-
 import java.util.Scanner;
 
 public class MainAirline2 {
