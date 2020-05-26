@@ -1,3 +1,5 @@
+package Exercise3;
+
 import java.util.Random;
 
 public class GamingMachine {
