@@ -1,3 +1,5 @@
+package Exercise1;
+
 public enum Month {
     JANUARY("January", 31, Seasons.WINTER),
     FEBRUARY("February",28,Seasons.WINTER),
