@@ -5,12 +5,14 @@ public class Car {
     private String model;
     private int cc;
     private EngineType type;
+    private ConsumptionType consumptionType;
 
     public Car(String brand, String model, int cc, EngineType type) {
         this.brand = brand;
         this.model = model;
         this.cc = cc;
         this.type = type;
+        this.consumptionType = type.getConsumptionType();
     }
 
     public String getBrand() {
@@ -39,6 +41,12 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car [brand=" + brand + ", model=" + model + ", cc=" + cc + ", type=" + type.getName() + "]";
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", cc=" + cc +
+                ", type=" + type.getName() +
+                ", consumptionType=" + consumptionType.getConsumptionTypeName() +
+                '}';
     }
 }

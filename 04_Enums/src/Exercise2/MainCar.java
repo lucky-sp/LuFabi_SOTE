@@ -21,7 +21,7 @@ public class MainCar {
 
         System.out.println("The company needs to pay in total: "+totalTaxes);
 
-        System.out.println("print all engine types");
+/*        System.out.println("print all engine types");
         EngineType[] engineTypes = EngineType.values();
         for(int i=0; i<engineTypes.length; i++) {
             System.out.println(engineTypes[i].getName());
@@ -29,6 +29,6 @@ public class MainCar {
 
         System.out.println("///////////");
         EngineType type = EngineType.valueOf("DIESEL");
-        System.out.println(type.getName());
+        System.out.println(type.getName());*/
     }
 }
