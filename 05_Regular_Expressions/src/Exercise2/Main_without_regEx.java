@@ -1,4 +1,4 @@
-package Excerxicse2;
+package Exercise2;
 
 public class Main_without_regEx{
 
