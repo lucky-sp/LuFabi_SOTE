@@ -1,3 +1,5 @@
+package Exercise2;
+
 public class Main_without_regEx{
 
     

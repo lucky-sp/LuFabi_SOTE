@@ -1,4 +1,6 @@
-public class Main {
+package Exercise2;
+
+public class MainRegex {
     public static void main( String[] args){
         String email= "philipp.hehnle@htwg-konstanz.de";
         String regExMail= ".{3,15}@.*\\.(de|org|ch)";
