@@ -1,6 +1,6 @@
 public enum Month {
     JANUARY("January", 31, Seasons.WINTER),
-    FEBRUARY("February",28,Seasons.WINTER),
+    FEBRUARY("February",28, Seasons.WINTER),
     MARCH("March", 31, Seasons.WINTER);
 
     private String myName;

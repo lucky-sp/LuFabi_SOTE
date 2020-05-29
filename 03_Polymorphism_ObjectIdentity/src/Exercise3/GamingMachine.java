@@ -1,11 +1,6 @@
 import java.util.Random;
 
 public class GamingMachine {
-    
-    
-    public void GamingMachine(){
-
-    }
 
     public static boolean play(Money money){
         Random random= new Random();
@@ -33,8 +28,6 @@ public class GamingMachine {
 		public String toString() {
 			return this.amount+"";
 		}      
-
-
     }
 
     public static void main(String[] args){
