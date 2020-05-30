@@ -22,7 +22,7 @@ public class Main6_3 {
             } else if (entityAnnotation.generationType().equals(GenerationType.SNAKE_CASE)) {
                 String regex = "([a-z])([A-Z]+)";
                 String replacement = "$1_$2";
-                tableName = clazz.getName().replaceAll(regex, replacement).toLowerCase();
+                tableName = clazz.getName().replaceAll(regex, replacement).toLowerCase().replaceAll(".*\\.","");
             }
         }
 
@@ -44,7 +44,7 @@ public class Main6_3 {
                 sqlStatement += columnName + " varchar(255), ";
 
             } else   {
-                if (pk.cons().equals(Constraint.PRIMARY_KEY)) {
+                if (pk.pk().equals(Constraint.PRIMARY_KEY)) {
                     sqlStatement += columnName + " integer primary key, ";
                 } else {
                     sqlStatement += columnName + " integer, ";

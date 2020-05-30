@@ -8,6 +8,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Id {
-public Constraint cons() default Constraint.PRIMARY_KEY;
+public Constraint pk() default Constraint.PRIMARY_KEY;
 }
 
