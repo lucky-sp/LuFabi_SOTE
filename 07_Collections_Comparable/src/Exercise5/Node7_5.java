@@ -5,6 +5,12 @@ public class Node7_5 {
     private Node7_5 previousNode;
     private Object content;
 
+    //Aufgabe 5
+    @Override
+    public String toString() {
+        return (String) content;
+    }
+
     public Node7_5(Object content) {
         this.content = content;
     }

@@ -42,6 +42,7 @@ public class Main7_5 {
             System.out.println(node.getContent());
         }*/
 
+        //Aufgabe 5
         for (Object object : list ) {
             System.out.println(object);
         }
