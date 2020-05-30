@@ -23,6 +23,10 @@ public class LList7_3 implements Iterable<Object> {
     }
 
     public void put(int i, Object content) {
+        if(head == null) {
+            System.out.println("List is empty, cannot put on index");
+            return;
+        }
         if (i == 0) {
             head.setContent(content);
         } else {
@@ -39,6 +43,10 @@ public class LList7_3 implements Iterable<Object> {
     }
 
     public void insertOnIndex(int index, Object content) {
+        if(head == null) {
+            System.out.println("List is empty, cannot insert on index");
+            return;
+        }
         if (index == 0) {
             Node7_3 previousHead = head;
             head = new Node7_3(content);
@@ -108,6 +116,7 @@ public class LList7_3 implements Iterable<Object> {
 
     public boolean contains(Object content) {
         if (head == null) {
+            System.out.println("List is empty, cannot search on object");
             return false;
         }
         Node7_3 iterationNode = head;
@@ -119,6 +128,11 @@ public class LList7_3 implements Iterable<Object> {
                     return true;
                 }
                 iterationNode = iterationNode.getNextNode();
+            }
+        }
+        if (iterationNode.getNextNode() == null) {
+            if (iterationNode.getContent().equals(content)) {
+                return true;
             }
         }
         return false;

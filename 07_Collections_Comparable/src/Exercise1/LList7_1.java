@@ -67,6 +67,7 @@ public class LList7_1 implements Iterable<Object> {
 
     public boolean contains(Object content) {
         if (head == null) {
+            System.out.println("List is empty, cannot search on object");
             return false;
         }
         Node7_1 iterationNode = head;
@@ -78,6 +79,11 @@ public class LList7_1 implements Iterable<Object> {
                     return true;
                 }
                 iterationNode = iterationNode.getNextNode();
+            }
+        }
+        if (iterationNode.getNextNode() == null) {
+            if (iterationNode.getContent().equals(content)) {
+                return true;
             }
         }
         return false;
