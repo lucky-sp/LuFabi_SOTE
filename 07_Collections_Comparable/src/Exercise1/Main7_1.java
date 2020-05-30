@@ -3,7 +3,7 @@ package Exercise1;
 public class Main7_1 {
     public static void main(String[] args) {
 
-        LList list =  new LList();
+        LList7_1 list =  new LList7_1();
 
         list.insert("Car1");
         list.insert("Car2");
@@ -11,7 +11,7 @@ public class Main7_1 {
         list.insert("Car4");
         list.insert("Car5");
 
-        list.remove(2);
+/*        list.remove(2);*/
 
         System.out.println("Does the list contain Car1 ? " + list.contains("Car1"));
         System.out.println("Does the list contain Car4 ? " + list.contains("Car4"));

@@ -1,26 +1,45 @@
-package Exercise1;
+package Exercise2;
 
 import java.util.Iterator;
 
-public class LList implements Iterable<Object> {
-    private Node head;
+public class LList7_2 implements Iterable<Object> {
+    private Node7_2 head;
 
     public void insert(Object content) {
         if (head == null) {
-            head = new Node(content);
+            head = new Node7_2(content);
         } else {
 
-            Node iterationNode = head;
+            Node7_2 iterationNode = head;
 
             while (iterationNode.getNextNode() != null) {
                 iterationNode = iterationNode.getNextNode();
             }
 
-            Node newNode = new Node(content);
+            Node7_2 newNode = new Node7_2(content);
             iterationNode.setNextNode(newNode);
             newNode.setPreviousNode(iterationNode);
         }
     }
+
+    public void put(int i, Object content) {
+        if (i == 0) {
+            head.setContent(content);
+        } else {
+            Node7_2 iterationNode = head;
+            for (int j = 0; j < i; j++) {
+                iterationNode = iterationNode.getNextNode();
+            }
+            if (iterationNode != null) {
+                iterationNode.setContent(content);
+            }
+            else {
+                System.out.println("Index " + i + " out of list's length");
+            }
+        }
+    }
+
+
 
     public int size() {
         if (head == null) {
@@ -28,7 +47,7 @@ public class LList implements Iterable<Object> {
         }
 
         int size = 1;
-        Node iterationNode = head;
+        Node7_2 iterationNode = head;
         for (; iterationNode.getNextNode() != null; size++) {
             iterationNode = iterationNode.getNextNode();
         }
@@ -37,7 +56,7 @@ public class LList implements Iterable<Object> {
 
     public Object get(int index) {
 
-        Node iterationNode = head;
+        Node7_2 iterationNode = head;
         for (int i = 0; i < index; i++) {
             iterationNode = iterationNode.getNextNode();
         }
@@ -51,7 +70,7 @@ public class LList implements Iterable<Object> {
             head = head.getNextNode();
         } else {
 
-            Node iterationNode = head;
+            Node7_2 iterationNode = head;
             for (int i = 0; i < index; i++) {
                 iterationNode = iterationNode.getNextNode();
             }
@@ -69,7 +88,7 @@ public class LList implements Iterable<Object> {
         if (head == null) {
             return false;
         }
-        Node iterationNode = head;
+        Node7_2 iterationNode = head;
         if (iterationNode.getContent().equals(content)) {
             return true;
         } else {
@@ -86,14 +105,14 @@ public class LList implements Iterable<Object> {
 
     @Override
     public Iterator<Object> iterator() {
-        return new LListIterator(head);
+        return new LList7_2.LListIterator(head);
     }
 
     public static class LListIterator implements Iterator<Object> {
 
-        private Node iterationNode;
+        private Node7_2 iterationNode;
 
-        public LListIterator(Node head) {
+        public LListIterator(Node7_2 head) {
             iterationNode = head;
         }
 
@@ -103,10 +122,11 @@ public class LList implements Iterable<Object> {
         }
 
         @Override
-        public Node next() {
-            Node nextNode = iterationNode;
+        public Node7_2 next() {
+            Node7_2 nextNode = iterationNode;
             iterationNode = iterationNode.getNextNode();
             return nextNode;
         }
     }
+
 }
