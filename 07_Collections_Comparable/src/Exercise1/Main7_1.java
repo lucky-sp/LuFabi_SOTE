@@ -13,6 +13,7 @@ public class Main7_1 {
 
 /*        list.remove(2);*/
 
+        //Aufgabe 1
         System.out.println("Does the list contain Car1 ? " + list.contains("Car1"));
         System.out.println("Does the list contain Car5 ? " + list.contains("Car5"));
         System.out.println("Does the list contain Car10 ? " + list.contains("Car10"));

@@ -65,6 +65,7 @@ public class LList7_1 implements Iterable<Object> {
         }
     }
 
+    //Aufgabe 1
     public boolean contains(Object content) {
         if (head == null) {
             System.out.println("List is empty, cannot search on object");

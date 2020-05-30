@@ -22,6 +22,7 @@ public class LList7_4 implements Iterable<Object> {
         }
     }
 
+    //Aufgabe 2
     public void put(int i, Object content) {
         if (head == null) {
             System.out.println("List is empty, cannot put on index");
@@ -42,6 +43,7 @@ public class LList7_4 implements Iterable<Object> {
         }
     }
 
+    //Aufgabe 3
     public void insertOnIndex(int index, Object content) {
         if (head == null) {
             System.out.println("List is empty, cannot insert on index");
@@ -112,6 +114,7 @@ public class LList7_4 implements Iterable<Object> {
         }
     }
 
+    //Aufgabe 4
     public boolean removeOnObject(Object content) {
         if (head == null) {
             return false;
@@ -144,6 +147,7 @@ public class LList7_4 implements Iterable<Object> {
         return false;
     }
 
+    //Aufgabe 1
     public boolean contains(Object content) {
         if (head == null) {
             System.out.println("List is empty, cannot search on object");
