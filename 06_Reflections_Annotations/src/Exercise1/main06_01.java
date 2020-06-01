@@ -1,8 +1,8 @@
-package Exercise1;
+//package src.Exercise1;
 
 import java.lang.reflect.Field;
 
-public class main05_01 {
+public class main06_01 {
     public static void main (String[] args){
         printObjectsAttributes(Student.class);
     }
