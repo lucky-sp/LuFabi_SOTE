@@ -1,3 +1,5 @@
+package Exercise1;
+
 public class Main04_1 {
     public static void main(String[] args){
         Month month= Month.FEBRUARY;
