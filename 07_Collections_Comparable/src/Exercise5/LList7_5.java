@@ -192,10 +192,10 @@ public class LList7_5 implements Iterable<Object> {
         }
 
         @Override
-        public Node7_5 next() {
+        public String next() {
             Node7_5 nextNode = iterationNode;
             iterationNode = iterationNode.getNextNode();
-            return nextNode;
+            return (String) nextNode.getContent();
         }
     }
 

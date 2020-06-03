@@ -6,10 +6,10 @@ public class Node7_5 {
     private Object content;
 
     //Aufgabe 5
-    @Override
+/*    @Override
     public String toString() {
         return (String) content;
-    }
+    }*/
 
     public Node7_5(Object content) {
         this.content = content;
