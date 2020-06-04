@@ -1,9 +1,9 @@
-//package src.Exercise1;
+package Exercise1;
 
 public class Address {
     private City city;
     private String street;
-    private int houseNumber;
+    private String houseNumber;
 
     public City getCity() {
         return city;
@@ -21,11 +21,11 @@ public class Address {
         this.street = street;
     }
 
-    public int getHouseNumber() {
+    public String getHouseNumber() {
         return houseNumber;
     }
 
-    public void setHouseNumber(int houseNumber) {
+    public void setHouseNumber(String houseNumber) {
         this.houseNumber = houseNumber;
     }
 }

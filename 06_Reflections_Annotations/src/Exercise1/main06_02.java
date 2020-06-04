@@ -1,4 +1,5 @@
-//package src.Exercise1;
+package Exercise1;
+
 import java.lang.reflect.Field;
 
 //import Exercise1.Address;
@@ -13,7 +14,7 @@ public class main06_02 {
             .setState("Bawü");
         Address address = new Address();
         address.setCity(konstanz);
-        address.setHouseNumber(21);
+        address.setHouseNumber("21");
         address.setStreet("Max-Stromeyer-Straße");
         Student student = new Student("Max Mustermann", address);
         printObjectsAttributes(student);
@@ -31,9 +32,11 @@ public class main06_02 {
         for (Field attribute : attributes){
             System.out.print(spaces + ">" + attribute.getName() + " : ");
             attribute.setAccessible(true);
-            System.out.println(attribute.get(unknownObject));
-            if ( ! attribute.getType().equals(String.class) ){
-                printObjectsAttributesRecursive((spaces + "     " ),attribute.getType());
+            if (attribute.getType().equals(String.class) ){
+                System.out.println(attribute.get(unknownObject));
+            }else{
+                System.out.println("");
+                printObjectsAttributesRecursive((spaces + "     " ),attribute.get(unknownObject));
             }
         }
     }

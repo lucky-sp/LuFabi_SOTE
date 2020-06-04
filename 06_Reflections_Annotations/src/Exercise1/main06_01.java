@@ -1,6 +1,8 @@
-//package src.Exercise1;
+package Exercise1;
 
 import java.lang.reflect.Field;
+
+import Exercise1.Student;
 
 public class main06_01 {
     public static void main (String[] args){
