@@ -1,3 +1,8 @@
+package Exercise2;
+
+import Exercise2.Car;
+import Exercise2.EngineType;
+
 public class Main04_2 {
     public static void main(String[] args) {
 

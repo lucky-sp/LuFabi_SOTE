@@ -1,19 +1,22 @@
+package Exercise6;
+
 public class Passenger07_6 {
     String name;
-    Passanger07_6 nextPassanger;
+    Passenger07_6 nextPassenger;
 
     public Passenger07_6(String name ){
         this.name = name;
     } 
 
-    public Passanger07_6 getNextPassanger() {
-        return nextPassanger;
+    public Passenger07_6 getNextPassenger() {
+        return nextPassenger;
     }
 
-    public void setNextPassanger(Passanger07_6 nextPassanger) {
-        this.nextPassanger = nextPassanger;
+    public void setNextPassanger(Passenger07_6 nextPassanger) {
+        this.nextPassenger = nextPassanger;
     }
 
-    
 
+    public void setNextPassenger(Passenger07_6 passenger) {
+    }
 }

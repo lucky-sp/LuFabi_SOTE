@@ -1,4 +1,5 @@
-import sun.jvm.hotspot.tools.SysPropsDumper;
+package Exercise6;
+
 
 public class main07_6 {
     
@@ -8,7 +9,7 @@ public class main07_6 {
 
 
 
-        for (Passenger07_6 passenger : colltection){
+        for (Object passenger : list){
             System.out.println(passenger);
         }
     }

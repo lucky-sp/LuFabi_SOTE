@@ -1,4 +1,6 @@
-import AirlineSolution1.Passenger07_6;
+package Exercise6;
+
+import java.util.Iterator;
 
 public class passengerList implements Iterable<Object>{
  
@@ -24,4 +26,8 @@ public class passengerList implements Iterable<Object>{
         return getLastPassengerRecursive(nexPassenger);
     }
 
+    @Override
+    public Iterator<Object> iterator() {
+        return null;
+    }
 }
