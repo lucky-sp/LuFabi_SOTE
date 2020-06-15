@@ -1,0 +1,18 @@
+public final class Algorithm {
+    public static T max(T x, T y)
+        {
+        return x > y ? x : y;
+        }
+}
+
+
+wird nicht kompiliert, da der T nicht definiert wird.
+T muss als Generic in den funktionskopf geschrieben werden.
+
+
+public final class Algorithm {
+    public static <T> T max(T x, T y)
+        {
+        return x > y ? x : y;
+        }
+}
