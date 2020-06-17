@@ -1,0 +1,8 @@
+If the compiler erases all type parameters at compile time, why should
+you use generics?
+
+Da Generics es uns ermöglichen, Methoden und Listen Typ-generisch einzusetzen. Der verwendete Datentyp wird
+erst beim Aufruf der Methode oder erzeugen der Liste festgelegt. Der Compiler ermöglicht uns
+damit Typ-Sicherheit, da geprüft wird, ob die Verwendung der Datentypen kompatibel ist. Das Typ Erasure
+kann dann problemlos bei der Laufzeit stattfinden, da Typfehler beim Compiler Fehler bereits ausgeschlossen hat.
+Durch das Typ Erasure ist dann eine Abwärtskompatibilität zwischen den Java Versionen ermöglicht.
