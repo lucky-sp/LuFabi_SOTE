@@ -1,0 +1,25 @@
+AnimalHouse <Animal> house1 = new AnimalHouse <Cat>();
+    // Compile Error
+    //House1 ist vom Datentyp Animal. Somit können Dogs und Cats hinzugefügt werden.
+    //House1 verweist aber auf Cat, jedoch kann nicht sichergestellt werden, dass house1 nur Cats enthält
+    //AnimalHouse<Cat> house1 = new Animalhouse<>();
+
+AnimalHouse <Dog> house2 = new AnimalHouse <Animal>();
+    //Compile Error
+    //Dog erbt vom Animal.
+    //kann keine neue Instanz mit Animal erzeugen, da das AnimalHouse als Dog-House definiert ist.
+    //Als Animal aber auch eine Cat sein kann.
+
+AnimalHouse <?> house3 = new AnimalHouse <Cat>();
+house3.setAnimal(new Cat());
+    //AnimalHouse house3 kann erstellt werden.
+    //ungebundener WildCartyp
+    //könnte zu Runtime-compile-Error führen, da wir ja für die Wildcard alles speichern können
+    //besser?: AnimalHouse<? extends Animal> house3 = new AnimalHouse<>();
+
+AnimalHouse house4 = new AnimalHouse();
+house4.setAnimal(new Dog());
+    //mit Warnings
+    //noch aus Abwärtskompatibilitätsgründen auch ohne Typ-Restriktion Angabe möglich
+    //könnte sein, dass Datentypen gespeichert werden sollen, die kein Objekt von AnimalHouse sind
+    //dann wirft es einen Fehler beim Kompilieren
