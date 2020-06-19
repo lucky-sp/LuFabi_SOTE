@@ -1,9 +1,9 @@
 try{
 
-} catch(Exceptione) {
+} catch(Exception e) {
 
-} catch(ArithmeticExceptiona) {
+} catch(ArithmeticException a) {
 
 }
 
-funktioniert nicht, da catch nur nach try kommen kann. In dem Fall kommt catch nach catch.
+Erste Exception catched alle Excpetions, zweite wird nie aktiviert.
