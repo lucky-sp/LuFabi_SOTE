@@ -1,12 +1,12 @@
-package Exercise1;
+package Exercise2;
 
-public class BinarySearchTree {
-    private Node11_1 head;
+public class BinarySearchTree11_2 {
+    private Node11_2 head;
 
     public void insert(int value) {
 
         if (head == null) {
-            head = new Node11_1(value);
+            head = new Node11_2(value);
         } else {
             head.insert(value);
         }

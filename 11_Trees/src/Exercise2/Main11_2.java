@@ -1,9 +1,9 @@
-package Exercise1;
+package Exercise2;
 
-public class Main11_1 {
+public class Main11_2 {
     public static void main(String[] args) {
 
-        BinarySearchTree11_1 bst = new BinarySearchTree11_1();
+        BinarySearchTree11_2 bst = new BinarySearchTree11_2();
         bst.insert(5);
         bst.insert(6);
         bst.insert(3);
