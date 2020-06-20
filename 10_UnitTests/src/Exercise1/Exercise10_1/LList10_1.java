@@ -1,12 +1,14 @@
-package Exercise1;
+package Exercise10_1;
+
+import Excercise2.Exceptions.ListISEmptyException;
+import Excercise2.Exceptions.OutOfRangeException;
 
 import java.util.Iterator;
 
-public class LList10_1 <T> implements Iterable<Object> {
-        private Node10_1 head;
+public class LList10_1<T> implements Iterable<Object> {
+    private Node10_1 head;
 
-
-        public void insert (T content){
+    public void insert(Object content) {
         if (head == null) {
             head = new Node10_1(content);
         } else {
@@ -23,32 +25,36 @@ public class LList10_1 <T> implements Iterable<Object> {
         }
     }
 
-        //Aufgabe 2
-        public void put ( int i, T content){
+    //Aufgabe 2
+    public void put(int i, Object content) throws ListISEmptyException, OutOfRangeException {
         if (head == null) {
-            System.out.println("List is empty, cannot put on index");
-            return;
+/////////////////////////// Exception
+            throw new ListISEmptyException("List is empty, cannot put on index");
         }
         if (i == 0) {
             head.setContent(content);
         } else {
             Node10_1 iterationNode = head;
-            for (int j = 0; j < i; j++) {
-                iterationNode = iterationNode.getNextNode();
-            }
-            if (iterationNode != null) {
-                iterationNode.setContent(content);
-            } else {
-                System.out.println("Index " + i + " out of list's length");
+            try {
+                for (int j = 0; j < i; j++) {
+                    iterationNode = iterationNode.getNextNode();
+                }
+                if (iterationNode != null) {
+                    iterationNode.setContent(content);
+                }
+            } catch (NullPointerException e) {
+
+//////////////////////// Exception
+                throw new OutOfRangeException("Index " + i + " out of list's length");
             }
         }
     }
 
-        //Aufgabe 3
-        public void insertOnIndex ( int index, T content){
+    //Aufgabe 3
+    public void insertOnIndex(int index, Object content) throws ListISEmptyException {
         if (head == null) {
-            System.out.println("List is empty, cannot insert on index");
-            return;
+/////////////////////// Exception
+            throw new ListISEmptyException("List is empty, cannot insert on index");
         }
         if (index == 0) {
             Node10_1 previousHead = head;
@@ -74,7 +80,7 @@ public class LList10_1 <T> implements Iterable<Object> {
     }
 
 
-        public int size () {
+    public int size() {
         if (head == null) {
             return 0;
         }
@@ -87,7 +93,7 @@ public class LList10_1 <T> implements Iterable<Object> {
         return size;
     }
 
-        public Object get ( int index){
+    public Object get(int index) {
         Node10_1 iterationNode = head;
         for (int i = 0; i < index; i++) {
             iterationNode = iterationNode.getNextNode();
@@ -96,7 +102,7 @@ public class LList10_1 <T> implements Iterable<Object> {
         return iterationNode.getContent();
     }
 
-        public void remove ( int index){
+    public void remove(int index) {
         if (index == 0) {
             head = head.getNextNode();
         } else {
@@ -115,8 +121,8 @@ public class LList10_1 <T> implements Iterable<Object> {
         }
     }
 
-        //Aufgabe 4
-        public boolean removeOnObject (T content){
+    //Aufgabe 4
+    public boolean removeOnObject(Object content) {
         if (head == null) {
             return false;
         }
@@ -148,8 +154,8 @@ public class LList10_1 <T> implements Iterable<Object> {
         return false;
     }
 
-        //Aufgabe 1
-        public boolean contains (T content){
+    //Aufgabe 1
+    public boolean contains(Object content) {
         if (head == null) {
             System.out.println("List is empty, cannot search on object");
             return false;
@@ -174,30 +180,30 @@ public class LList10_1 <T> implements Iterable<Object> {
     }
 
 
-        @Override
-        public Iterator<Object> iterator () {
+    @Override
+    public Iterator<Object> iterator() {
         return new LList10_1.LListIterator(head);
     }
 
-        public static class LListIterator implements Iterator<Object> {
+    public static class LListIterator implements Iterator<Object> {
 
-            private Node10_1 iterationNode;
+        private Node10_1 iterationNode;
 
-            public LListIterator(Node10_1 head) {
-                iterationNode = head;
-            }
+        public LListIterator(Node10_1 head) {
+            iterationNode = head;
+        }
 
-            @Override
-            public boolean hasNext() {
-                return iterationNode != null;
-            }
+        @Override
+        public boolean hasNext() {
+            return iterationNode != null;
+        }
 
-            @Override
-            public Node10_1 next() {
-                Node10_1 nextNode = iterationNode;
-                iterationNode = iterationNode.getNextNode();
-                return nextNode;
-            }
+        @Override
+        public String next() {
+            Node10_1 nextNode = iterationNode;
+            iterationNode = iterationNode.getNextNode();
+            return (String) nextNode.getContent();
         }
     }
+}
 

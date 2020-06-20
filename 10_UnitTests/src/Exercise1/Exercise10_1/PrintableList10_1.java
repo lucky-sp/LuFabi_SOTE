@@ -1,4 +1,4 @@
-package Exercise1;
+package Exercise10_1;
 
 public class PrintableList10_1<T>{
 

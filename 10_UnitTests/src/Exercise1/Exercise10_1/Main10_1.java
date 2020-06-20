@@ -1,7 +1,10 @@
-package Exercise1;
+package Exercise10_1;
+
+import Excercise2.Exceptions.ListISEmptyException;
+import Excercise2.Exceptions.OutOfRangeException;
 
 public class Main10_1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ListISEmptyException, OutOfRangeException {
 
         LList10_1<Object> list = new LList10_1<>();
 

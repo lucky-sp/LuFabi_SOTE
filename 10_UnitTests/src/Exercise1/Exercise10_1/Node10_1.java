@@ -1,4 +1,4 @@
-package Exercise1;
+package Exercise10_1;
 
 public class Node10_1 {
     private Node10_1 nextNode;
