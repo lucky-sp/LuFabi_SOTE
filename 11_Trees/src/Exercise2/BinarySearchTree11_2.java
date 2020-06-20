@@ -28,6 +28,7 @@ public class BinarySearchTree11_2 {
             head.print();
         }
     }
+
     public boolean contains(int value) {
         while (head != null) {
             if (value < head.value) {
@@ -37,6 +38,22 @@ public class BinarySearchTree11_2 {
             } else
                 return true;
         }
+        return false;
+    }
+
+    public boolean isFullTree() {
+        return fullTree(head);
+    }
+
+    public boolean fullTree(Node11_2 head) {
+        if (head == null) {
+            return true;
+        }
+        if (head.left == null && head.right == null) {
+            return true;
+        }
+        if((head.left!=null) & (head.right!=null))
+            return (fullTree(head.left) && fullTree(head.right));
         return false;
     }
 }

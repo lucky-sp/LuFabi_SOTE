@@ -14,6 +14,6 @@ public class Main11_1 {
         //System.out.println("size: "+bst.size());
 
         //bst.print();
-        System.out.println(bst.contains(2));
+        System.out.println("Does it contain your value?: " + bst.contains(2));
     }
 }
