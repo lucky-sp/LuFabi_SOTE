@@ -6,9 +6,9 @@ import org.junit.Test;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class printListTest {
+public class printListTest {
     @Test(expected = Test.None.class /* no exception expected */)
     public void testprintList_printPassengerList() throws NotAuthorizedException {
         //given
@@ -33,4 +33,5 @@ class printListTest {
         //when
         printList.printPassengerList(h1, flightList);
     }
+
 }
